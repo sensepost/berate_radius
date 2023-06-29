@@ -29,6 +29,6 @@ COPY /hostapd_configs/hostapd.eap_user /hostapd_configs/hostapd.eap_user
 COPY certs /certs
 COPY output /output
 
-COPY --chmod=755 entrypoint.sh /entrypoint.sh
+COPY --chmod=755 berate_radius.sh /berate_radius.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/berate_radius.sh"]
