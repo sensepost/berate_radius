@@ -1,7 +1,6 @@
-# hostapd-mana RADIUS Docker
+# Berate_radius helper
 
-Quick Alpine Hostapd Docker
-
+Help to quickly create a malicious RADIUS server using hostapd-mana
 
 ## Get certificate to use:
 
