@@ -18,9 +18,9 @@ radius_server_auth_port=1812
 radius_server_acct_port=1813
 
 # we have some certs we'll generate
-ca_cert=/certs/$domain.issuer.crt
-server_cert=/certs/$domain.crt
-private_key=/certs/$domain.key
+ca_cert=/certs/${DOMAIN}.issuer.crt
+server_cert=/certs/${DOMAIN}.crt
+private_key=/certs/${DOMAIN}.key
 
 mana_wpe=1
 mana_credout=/output/hostapd.credout
