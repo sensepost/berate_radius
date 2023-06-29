@@ -2,14 +2,14 @@ FROM alpine:3.18 AS BUILDER
 
 RUN apk add openssl-dev libnl3-dev linux-headers git alpine-sdk
 
-COPY --chmod=755 build.sh /build.sh
+COPY --chmod=755 confedit.sh /confedit.sh
 
 WORKDIR /hostapd-mana
 RUN git clone https://github.com/sensepost/hostapd-mana . &&\
     git checkout 1302a7204d9118efa0668df1924c938dbe8d1b11
 
 WORKDIR /hostapd-mana/hostapd
-RUN /build.sh
+RUN /confedit.sh
 
 
 FROM alpine:3.18
