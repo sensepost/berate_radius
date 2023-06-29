@@ -1,0 +1,27 @@
+#!/bin/sh
+
+cat <<END
+driver=none
+
+logger_syslog=-1
+logger_syslog_level=4
+logger_stdout=-1
+logger_stdout_level=4
+
+# we _do_ want to handle EAP please
+eap_server=1 
+eap_user_file=/hostapd_configs/hostapd.eap_user
+
+# and we want to be a radius server
+radius_server_clients=/hostapd_configs/hostapd.radius_client
+radius_server_auth_port=1812
+radius_server_acct_port=1813
+
+# we have some certs we'll generate
+ca_cert=/certs/$domain.issuer.crt
+server_cert=/certs/$domain.crt
+private_key=/certs/$domain.key
+
+mana_wpe=1
+mana_credout=/output/hostapd.credout
+END

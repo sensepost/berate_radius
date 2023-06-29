@@ -1,0 +1,5 @@
+# Hostapd-manas default EAP User file to try accept as many creds as possible
+
+*		    PEAP,TTLS,TLS,MD5,GTC
+*       	TTLS-MSCHAPV2,MSCHAPV2,MD5,GTC,TTLS-PAP,TTLS-CHAP,TTLS-MSCHAP  "1234test"  [2]
+"t"     	TTLS-MSCHAPV2,MSCHAPV2,MD5,GTC,TTLS-PAP,TTLS-CHAP,TTLS-MSCHAP  "1234test"  [2]

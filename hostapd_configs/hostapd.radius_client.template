@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cat <<END
+# RADIUS client configuration for the RADIUS server
+$range      $password
+END
